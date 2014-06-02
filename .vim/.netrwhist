@@ -1,0 +1,7 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =5
+let g:netrw_dirhist_1='/home/nskelsey/projects/pl/pa5/testcases'
+let g:netrw_dirhist_2='/home/nskelsey/.vim'
+let g:netrw_dirhist_3='/home/nskelsey/projects/pl/pa5/cool-examples'
+let g:netrw_dirhist_4='/home/nskelsey/.ssh'
+let g:netrw_dirhist_5='/etc/apt/sources.list.d'
