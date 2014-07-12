@@ -33,3 +33,7 @@ set ruler
 
 " enable console mouse
 set mouse=a
+
+" Mark lines over 80 characters for easy text align
+highlight OverLength ctermbg=darkred ctermfg=white guibg=#592929
+match OverLength /\%81v/
