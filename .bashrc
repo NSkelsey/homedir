@@ -7,5 +7,6 @@ export ANDROID_HOME=/home/nskelsey/projects/eclipse/adt-bundle-linux-x86_64-2014
 
 export GOROOT=/usr/lib/go
 export GOPATH=$HOME/gocode
+export PATH=$PATH:$GOPATH/bin
 
 alias sprunge='curl -F "sprunge=<-" http://sprunge.us'
