@@ -7,3 +7,12 @@ export CLICOLOR=1
 export LSCOLORS=ExFxBxDxCxegedabagacad
 alias ls='ls -GFh'
 
+parse_git_branch () {
+  git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/\1/'
+}
+
+# User @ Machine
+PS1='\[\033[36m\]\u\[\033[m\] @ \[\033[32m\]\h'
+# [current path] : git branch \n
+PS1=$PS1' \[\033[01;34m\]\w\033[00m\] \033[01;33m\]$(parse_git_branch)\[\033[00m\]\n\$ '
+PS2='\[\033[01;36m\]>'
